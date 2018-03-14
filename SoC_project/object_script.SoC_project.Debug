@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\user.o
+./debug\character.o
+./debug\location.o
+./debug\mob.o
+./debug\game.o
+./debug\warrior.o
+./debug\mage.o
+./debug\tank.o
+./debug\priest.o
+./debug\stats.o
+./debug\boss.o
+);

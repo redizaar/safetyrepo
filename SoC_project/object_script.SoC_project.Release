@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\user.o
+./release\character.o
+./release\location.o
+./release\mob.o
+./release\game.o
+./release\warrior.o
+./release\mage.o
+./release\tank.o
+./release\priest.o
+./release\stats.o
+./release\boss.o
+);
