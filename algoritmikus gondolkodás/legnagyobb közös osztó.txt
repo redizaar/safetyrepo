@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int gyak(int num1,int num2)
+{
+    int smaller;
+    if(num1>num2) smaller=num2;
+    else smaller=num1;                                 //ezt azért csináltam mert nyilván a kisebb számba elõbb találjuk meg a legnagyobb közös osztót
+    if(num1%num2==0) return num2;                      //igy kevesebb ideig fut a program :O #cpubarát kappa
+    else if(num2%num1==0) return num1;
+    smaller--;
+    while(!(num1%smaller==0 && num2%smaller==0))
+        smaller--;
+    return smaller;
+}
+int main()
+{
+    int num1;
+    int num2;
+    cin>>num1;
+    cin>>num2;
+    int res=gyak(num1,num2);
+    cout<<num1/res<<" "<<num2/res<<endl;
+    return 0;
+}
