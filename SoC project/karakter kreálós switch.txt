@@ -1,0 +1,38 @@
+switch(choice)
+        {
+            case 1:
+            {
+                Warrior warriobj(c_name);
+                warriobj.setC_attackapower(10);
+                warriobj.setC_hp(150);
+                warriobj.setC_lvl(1);
+            }
+            break;
+            case 2:
+            {
+                Mage mageobj(c_name);
+                mageobj.setC_spellpower(20);
+                mageobj.setC_hp(120);
+                mageobj.setC_lvl(1);
+            }
+            break;
+            case 3:
+            {
+                Tank tankobj(c_name);
+                tankobj.setC_attackapower(3);
+                tankobj.setC_hp(250);
+                tankobj.setC_lvl(1);
+            }
+            break;
+            case 4:
+            {
+                Priest priestobj(c_name);
+                priestobj.setC_spellpower(20);
+                priestobj.setC_hp(120);
+                priestobj.setC_lvl(1);
+            }
+            break;
+            default :
+                cout<<"Please choose a valid number (1-4)"<<endl;
+            break;
+        }
